@@ -12,8 +12,9 @@
     padding: 0;
   }
   
-  /* Event form */
-  #event-subscription {
+/* Event form */
+#event-subscription {
+    position: relative; /* Adicionando posicionamento relativo ao container */
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url("../img/hrz-5.jpg");
     background-position: center;
@@ -21,17 +22,30 @@
     height: 85vh;
     display: flex;
     justify-content: space-around;
+    font-size: 10px;
     align-items: center;
     color: var(--text-color);
+  }
+  
+  .newsletter {
+    position: absolute; /* Adicionando posicionamento absoluto */
+    top: 0; /* Posicionando no topo */
+    right: 0; /* Posicionando no canto direito */
+    padding: 20px; /* Adicionando espaço interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Definindo uma cor de fundo */
+    color: var(--text-color); /* Definindo a cor do texto */
   }
   
   #disclaimer h2,
   #disclaimer .event-date {
     color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
   }
   
   #disclaimer h2 {
-    font-size: 3em;
+    font-size: 60px;
     margin-bottom: 1em;
   }
   
@@ -44,8 +58,8 @@
   }
   
   #disclaimer p {
-    font-size: 1.2em;
-    margin-bottom: 0.3em;
+    font-size: 2.0em;
+    margin-bottom: 0.5em;
   }
   
   #disclaimer .event-date {
